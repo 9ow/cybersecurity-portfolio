@@ -12,16 +12,16 @@ A technical learning portfolio on layered network defence, Cisco IOS security co
 | [ACLs, firewall architecture and zone policies](topics/firewalls-acls-and-zone-policies/README.md) | ACL matching and order; wildcard masks; state tables; CBAC; DMZ; class maps, policy maps and directed zone pairs |
 | [Intrusion detection and prevention](topics/intrusion-detection-and-prevention/README.md) | Passive IDS vs inline IPS; SPAN; atomic/composite signatures; detection engines; alarms, tuning and IOS IPS |
 | [Endpoint and LAN controls](topics/integration-notes-pending/README.md) | Host defences; CAM overflow; port security; VLAN hopping; DHCP snooping; ARP inspection; combined control design |
-| [Practical evidence register](LAB_EVIDENCE.md) | Separately scoped lab worksheets, evidence gaps, verification criteria and privacy review |
+| [Practical evidence register](PRACTICAL_EVIDENCE.md) | Separately scoped practical exercise worksheets, evidence gaps, verification criteria and privacy review |
 
 ## Evidence language
 
-**Studied:** explicitly described in the supplied lecture slides and study discussions. **Illustrative configuration:** educational syntax reflecting those topics; it is *not* a claim that the commands ran on a device. **Verified hands-on:** requires original authorized lab topology/configuration, device output and a specific expected-vs-observed test. There is currently **no independently verified hands-on result** in the supplied evidence. A syllabus activity, exercise question, worked answer or screenshot of a question is not execution evidence.
+**Studied:** explicitly described in the supplied lecture technical materials and study discussions. **Illustrative configuration:** educational syntax reflecting those topics; it is *not* a claim that the commands ran on a device. **Verified hands-on:** requires original authorized practical exercise topology/configuration, device output and a specific expected-vs-observed test. There is currently **no independently verified hands-on result** in the supplied evidence. A syllabus activity, exercise question, worked answer or screenshot of a question is not execution evidence.
 
 ## Documentation conventions and boundaries
 
 - Commands use placeholder addresses and identifiers from documentation ranges, or redacted values. No usable secrets or private network details are published.
-- IOS command availability varies by platform, software train and licence. Validate against the actual lab image before execution.
+- IOS command availability varies by platform, software train and licence. Validate against the actual practical exercise image before execution.
 - A secure deployment must test authorized success, unauthorized denial, failover behaviour, logging and recovery; configuration text alone does not prove enforcement.
 - Uploaded exam practice/dump documents were treated as **secondary prompts**, not authoritative configuration evidence. Their copyrighted question banks and answer keys have not been redistributed.
 - No personal identities, student identifiers, grades, passwords, server secrets, private infrastructure, screenshots from a HomeLab, or unreviewed images are included.

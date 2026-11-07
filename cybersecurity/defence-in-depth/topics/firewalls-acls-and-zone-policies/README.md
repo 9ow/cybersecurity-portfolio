@@ -18,11 +18,11 @@ ip access-list extended WEB_POLICY
 interface GigabitEthernet0/0
  ip access-group WEB_POLICY in
 ```
-This illustrates rule selection, **not an executed lab**. Rule 20 does not permit arbitrary other destinations, and logging an explicit final deny differs from relying silently on implicit denial. For a source-specific rule to work, the chosen interface and direction must actually see that source's ingress packets. To edit, remove or insert a specific sequence entry instead of adding a broad `permit any any` before restrictions. Verification would use `show access-lists`, `show ip interface`, match counters and positive/negative traffic tests.
+This illustrates rule selection, **not an executed practical exercise**. Rule 20 does not permit arbitrary other destinations, and logging an explicit final deny differs from relying silently on implicit denial. For a source-specific rule to work, the chosen interface and direction must actually see that source's ingress packets. To edit, remove or insert a specific sequence entry instead of adding a broad `permit any any` before restrictions. Verification would use `show access-lists`, `show ip interface`, match counters and positive/negative traffic tests.
 
 ## Firewall types, state and DMZ
 
-**Stateless packet filters** inspect each packet's fields, often described by the source/destination IP, source/destination port and protocol **five-tuple**. They do **not** remember a session. A **stateful firewall** stores connection state (e.g. TCP handshake/session information) and can allow legitimate return traffic for outbound sessions. **Application gateways / proxies** process application semantics such as HTTP or FTP and can relay on behalf of clients; more inspection brings complexity and processing overhead. The slides also discuss NAT firewalls, which are **not** complete access control simply by hiding addresses.
+**Stateless packet filters** inspect each packet's fields, often described by the source/destination IP, source/destination port and protocol **five-tuple**. They do **not** remember a session. A **stateful firewall** stores connection state (e.g. TCP handshake/session information) and can allow legitimate return traffic for outbound sessions. **Application gateways / proxies** process application semantics such as HTTP or FTP and can relay on behalf of clients; more inspection brings complexity and processing overhead. The technical materials also discuss NAT firewalls, which are **not** complete access control simply by hiding addresses.
 
 A useful stateful-flow diagram would show an internal client initiating TCP to a permitted external service, creation of a state-table entry and related return packets matching that state; a new unsolicited inbound connection is a different flow and should be rejected. Firewalls must sit on the actual traffic path, resist attack and enforce policy. Their limitations include misconfiguration, encrypted payload visibility, insider threats, performance overhead and bypass paths.
 
@@ -45,7 +45,7 @@ The source defines **zones** as security boundaries and **directed zone pairs** 
 - **pass:** allows matching traffic *without* session tracking; a reverse-direction policy may be required for return traffic.
 - **drop:** blocks matching traffic and may be logged.
 
-**Directional illustrative configuration** (adapt interfaces to the authorized lab; no claim of execution):
+**Directional illustrative configuration** (adapt interfaces to the authorized practical exercise; no claim of execution):
 ```cisco
 zone security INSIDE
 zone security OUTSIDE
@@ -68,4 +68,4 @@ The direction **INSIDE → OUTSIDE** matters; this does not permit unsolicited O
 
 **Verification:** `show zone security`, `show zone-pair security`, `show class-map type inspect`, `show policy-map type inspect`, `show policy-map type inspect zone-pair sessions` and `show run | begin class-map`. Check source/destination, active session state, permitted TCP/80/443, blocked out-of-policy traffic and actual reverse flow. `inspect` cannot be proved from a static screenshot of policy text.
 
-**What I learned:** ACL rule order and interface direction govern stateless enforcement; a ZPF is a directional policy system, and `inspect` differs fundamentally from `pass`. **Not verified:** ACL match counters, transit tests or ZPF session state. See [lab register](../../LAB_EVIDENCE.md).
+**What I learned:** ACL rule order and interface direction govern stateless enforcement; a ZPF is a directional policy system, and `inspect` differs fundamentally from `pass`. **Not verified:** ACL match counters, transit tests or ZPF session state. See [practical exercise register](../../PRACTICAL_EVIDENCE.md).

@@ -4,7 +4,7 @@
 
 ## Protection strategy and administrative paths
 
-A router has physical, operating-system/configuration and service attack surfaces. Lock equipment in controlled rooms, restrict consoles and removable media, maintain tested backups and controlled software images, keep software patched, disable unneeded services, log changes and review management permissions. Edge architectures in the slides compare a single edge router, multiple layered controls and a **DMZ** isolating public-facing servers. Isolation limits blast radius; an edge router alone cannot establish trust.
+A router has physical, operating-system/configuration and service attack surfaces. Lock equipment in controlled rooms, restrict consoles and removable media, maintain tested backups and controlled software images, keep software patched, disable unneeded services, log changes and review management permissions. Edge architectures in the technical materials compare a single edge router, multiple layered controls and a **DMZ** isolating public-facing servers. Isolation limits blast radius; an edge router alone cannot establish trust.
 
 **Local console** is physically attached; **AUX/modem** is an alternate management path; **VTY** lines accept remote CLI sessions; a **dedicated OOB management network** separates administrative traffic from production. In-band management is convenient from multiple sites and tools but requires restrictive routing/ACLs and encryption. OOB offers a recovery channel if production forwarding is broken and reduces exposure of management protocols on user networks. Both still require authorization.
 
@@ -14,7 +14,7 @@ The source distinguishes reversible IOS **Type 7** obfuscation from stronger sec
 
 **Illustrative configuration only (not executed):**
 ```cisco
-hostname LAB-RTR
+hostname practical exercise-RTR
 ip domain-name example.invalid
 security passwords min-length 10
 ! Configure local usernames and secrets interactively; do not commit them.
@@ -49,4 +49,4 @@ Cisco IOS **privilege 1** is normal user EXEC and **15** is privileged EXEC. Lev
 
 Routing-protocol spoofing can redirect, blackhole or loop traffic. OSPF interface authentication (legacy MD5 and SHA/key-chain mechanisms in supported images) protects routing adjacencies against unauthorized peers; matching algorithm/key-id/key material and platform support matter. **CoPP** protects CPU-bound protocol traffic by matching classes and policing, not by blocking packets already forwarded through the data plane. **IOS resilient configuration** (e.g., `secure boot-image` and `secure boot-config` in compatible releases) helps protect an IOS image/configuration and can change normal `dir` visibility; confirm restore procedures in a safe environment.
 
-**What I learned:** availability of a secure management channel, secure identity, least privilege and trustworthy logs are separate requirements. **Not verified:** SSH session outcomes, log delivery, privilege-view enforcement, OSPF adjacency, NTP synchronization or protected-image recovery. See [lab register](../../LAB_EVIDENCE.md).
+**What I learned:** availability of a secure management channel, secure identity, least privilege and trustworthy logs are separate requirements. **Not verified:** SSH session outcomes, log delivery, privilege-view enforcement, OSPF adjacency, NTP synchronization or protected-image recovery. See [practical exercise register](../../PRACTICAL_EVIDENCE.md).

@@ -16,4 +16,4 @@ Technical foundations and verified simulated enterprise work using Cisco IOS and
 
 ## Verification & publication
 
-The technical documentation identifies which material came from lectures or worksheets and which outcomes have actually been tested. Authentic lab screenshots may be added only to permitted networking and security topics after removing identity details and private infrastructure. AI evidence is text/code-only. These notes are learning evidence, not a claim of production employment or vendor certification.
+The technical documentation identifies which material came from lectures or worksheets and which outcomes have actually been tested. Authentic practical exercise screenshots may be added only to permitted networking and security topics after removing identity details and private infrastructure. AI evidence is text/code-only. These notes are learning evidence, not a claim of production employment or vendor certification.

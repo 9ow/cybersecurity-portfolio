@@ -6,7 +6,7 @@
 
 **Classification** predicts one of several discrete labels (for example spam/legitimate or a fruit category). **Regression** predicts a continuous quantity (for example electricity charges under a supplied linear rule). In multiclass classification, integer-encoded classes still represent **categories**, not a meaningful numeric continuum. A training sample is `(X_i, y_i)`; a fitted estimator predicts labels `ŷ_i` for held-out observations. Training success is not the same as reliable testing or operational detection.
 
-The slides introduce `train_test_split(test_size=..., train_size=..., random_state=..., shuffle=...)` and list 70/30, 80/20 and 90/10 as examples. A held-out test set is for evaluation; avoid tuning decisions on it repeatedly. Class imbalance means plain accuracy can mislead.
+The technical materials introduce `train_test_split(test_size=..., train_size=..., random_state=..., shuffle=...)` and list 70/30, 80/20 and 90/10 as examples. A held-out test set is for evaluation; avoid tuning decisions on it repeatedly. Class imbalance means plain accuracy can mislead.
 
 ## Confusion matrix and classification metrics — supplemental explanation
 

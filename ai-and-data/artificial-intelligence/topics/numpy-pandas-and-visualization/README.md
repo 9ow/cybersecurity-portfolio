@@ -1,6 +1,6 @@
 # NumPy, Pandas, and Matplotlib for Data Analysis
 
-> **Sources:** uploaded *NumPy, Pandas, Matplotlib* lecture deck and practical worksheet. Code examples below are demonstrations/reconstructions of the taught API, not proof of completed personal lab exercises.
+> **Sources:** uploaded *NumPy, Pandas, Matplotlib* lecture deck and practical worksheet. Code examples below are demonstrations/reconstructions of the taught API, not proof of completed personal practical exercise exercises.
 
 ## NumPy: efficient numerical arrays
 
@@ -43,7 +43,7 @@ These arithmetic results are deterministic and correspond to the **worksheet's s
 
 ## Pseudorandom values and reproducibility
 
-`np.random.rand(...)` samples floats on `[0,1)`, `np.random.randint(low, high, size=...)` chooses integer values with **exclusive `high`**, and `np.random.seed(42)` sets the legacy global RNG state so the same operation sequence is reproducible. The slides demonstrate sample random outputs; without fixing the exact seed and call order, those exact numbers are not guaranteed. Random samples are not cryptographically secure.
+`np.random.rand(...)` samples floats on `[0,1)`, `np.random.randint(low, high, size=...)` chooses integer values with **exclusive `high`**, and `np.random.seed(42)` sets the legacy global RNG state so the same operation sequence is reproducible. The technical materials demonstrate sample random outputs; without fixing the exact seed and call order, those exact numbers are not guaranteed. Random samples are not cryptographically secure.
 
 ## Pandas: labeled data, CSV, selection, and modification
 
@@ -90,5 +90,5 @@ The worksheet's NumPy practice requests scalar broadcasting and element-wise add
 The visualization exercise specifies seven daily sales `[40,45,50,55,65,70,80]`, totals `[400,540,360]`, and seven advertising budgets versus units sold. The tasks request line, bar and scatter charts respectively; they are **instructions, not verified submitted plots**. No screenshots should be included.
 
 ## Sources
-- Uploaded *NumPy, Pandas, Matplotlib* slides: ndarray creation, metadata, slicing, broadcasting, RNG, Series/DataFrame, chart anatomy and methods.
+- Uploaded *NumPy, Pandas, Matplotlib* technical materials: ndarray creation, metadata, slicing, broadcasting, RNG, Series/DataFrame, chart anatomy and methods.
 - Uploaded *NumPy, Pandas, and Matplotlib* worksheet: worked examples and three final practical prompts.

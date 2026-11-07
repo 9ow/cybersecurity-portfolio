@@ -10,7 +10,7 @@ Never commit student IDs, contributor/interviewee names, email addresses, phone 
 
 ## Evidence tiers
 - **Implemented / tested:** directly supported by project outputs, relevant recorded tests or confirmed practical evidence.
-- **Practiced:** a lab activity has been discussed or attempted, but the final outcome may need confirmation.
+- **Practiced:** a practical exercise activity has been discussed or attempted, but the final outcome may need confirmation.
 - **Studied:** concepts verified in lecture or course material, without implying a live implementation.
 - **Planned:** not yet performed or independently verified.
 

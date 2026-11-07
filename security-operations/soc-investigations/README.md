@@ -16,7 +16,7 @@ The dataset is **simulated**, not a network capture from a private HomeLab or a 
 | --- | --- | --- |
 | TCP flow record A | One outbound SYN toward destination port **80** | A connection attempt, not proof of an HTTP session |
 | TCP flow record B | One outbound SYN toward destination port **443** | A second observed destination service/port |
-| Suricata alert | SYN-burst pattern with destination port **139**; lab signature **SID 1000002** | Alert correlates with multiple SYN attempts; the SID alone does not establish port diversity |
+| Suricata alert | SYN-burst pattern with destination port **139**; practical exercise signature **SID 1000002** | Alert correlates with multiple SYN attempts; the SID alone does not establish port diversity |
 | Synthetic host note | Label: **Authorized inventory exercise** | Plausible benign explanation; not independently verified permission |
 
 ### Timeline reasoning

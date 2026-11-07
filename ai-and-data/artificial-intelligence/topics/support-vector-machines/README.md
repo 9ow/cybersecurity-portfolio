@@ -1,6 +1,6 @@
 # Support Vector Machines: Decision Boundaries and Margins
 
-> **Evidence boundary:** The existing repository already contained an SVM explanation. The four uploaded lecture decks and their worksheets only **mention SVM as an example of a supervised estimator or scikit-learn documentation topic**; they do not supply a dedicated SVM lesson, experiment, classifier performance, or fitted output. The deeper sections below are retained and clarified as **supplemental technical reference**, not attributed to unseen slides.
+> **Evidence boundary:** The existing repository already contained an SVM explanation. The four uploaded lecture decks and their worksheets only **mention SVM as an example of a supervised estimator or scikit-learn documentation topic**; they do not supply a dedicated SVM lesson, experiment, classifier performance, or fitted output. The deeper sections below are retained and clarified as **supplemental technical reference**, not attributed to unseen technical materials.
 
 ## Linear separating hyperplanes
 
@@ -37,5 +37,5 @@ classifier = make_pipeline(
 SVMs can work well for moderate-size numerical feature datasets, particularly with appropriate scaling. They may be less suitable for extremely large datasets or require careful hyperparameter selection. Rare classes and class imbalance complicate evaluation; use per-class metrics and preserve an unseen test set. Explain cross-validation and actual results only after executable evidence is available. The old repository's email Work/Personal illustration is a conceptual example, **not** a completed case study.
 
 ## Sources
-- Uploaded *Introduction to Machine Learning with Scikit-learn* slides/worksheet: SVM name appears in lists of supervised-learning approaches, without algorithm detail.
+- Uploaded *Introduction to Machine Learning with Scikit-learn* technical materials/worksheet: SVM name appears in lists of supervised-learning approaches, without algorithm detail.
 - Existing repository *Support Vector Machines* article: conceptual reference present before this revision; enhanced here as explicitly marked supplemental background.

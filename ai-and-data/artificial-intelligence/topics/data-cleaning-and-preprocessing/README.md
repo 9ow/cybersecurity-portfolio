@@ -34,7 +34,7 @@ Remove identifiers that are not meaningful predictive features, but do not remov
 
 ## Outliers: understand IQR before choosing an action
 
-The lecture uses quartiles `Q1=25th percentile`, `Q3=75th percentile`, **IQR = Q3 − Q1**, with fences **lower = Q1 − 1.5×IQR** and **upper = Q3 + 1.5×IQR**. For example if `Q1=10`, `Q3=18`, `IQR=8`; fences are `-2` and `30`. Values outside are **flags**, not automatically mistakes. The slide's salary example flags extreme values compared with ordinary salaries, but legitimate extreme observations can occur in many domains. Keep/drop/clip decisions should have domain justification and be fitted without peeking at the test split.
+The lecture uses quartiles `Q1=25th percentile`, `Q3=75th percentile`, **IQR = Q3 − Q1**, with fences **lower = Q1 − 1.5×IQR** and **upper = Q3 + 1.5×IQR**. For example if `Q1=10`, `Q3=18`, `IQR=8`; fences are `-2` and `30`. Values outside are **flags**, not automatically mistakes. The technical reference's salary example flags extreme values compared with ordinary salaries, but legitimate extreme observations can occur in many domains. Keep/drop/clip decisions should have domain justification and be fitted without peeking at the test split.
 
 ```python
 q1 = df["numeric_feature"].quantile(0.25)
@@ -49,5 +49,5 @@ flagged = df[(df["numeric_feature"] < q1 - 1.5 * iqr) |
 The cleaning practical illustrates file upload in Colab, `isnull`/`info`, removing missing rows, mean and mode imputation, duplicate removal and encoding. Its final **employee dataset** task asks for deduplication, mean imputation of Age and Salary, Gender encoding, and Salary IQR inspection. The **healthcare dataset** task requests duplicate-patient checks, mean imputation of Blood_Pressure and BMI, encoding Diagnosis and Gender, and investigation of ages greater than 100. Those example datasets and executed submissions are **not** among the uploaded verification evidence; no results are claimed. Exclude patient data and identifiable employee details from GitHub.
 
 ## Sources
-- Uploaded *Data Cleaning* slides: data quality, imputation, duplicates, text normalization, dtype changes, feature selection, encoding, boxplots/IQR.
+- Uploaded *Data Cleaning* technical materials: data quality, imputation, duplicates, text normalization, dtype changes, feature selection, encoding, boxplots/IQR.
 - Uploaded *Cleaning Datasets* practical worksheet: demonstrated procedures and assigned employee/healthcare tasks.

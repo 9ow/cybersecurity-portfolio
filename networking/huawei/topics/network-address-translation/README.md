@@ -1,6 +1,6 @@
 # Network Address Translation
 
-**Source:** `Firewall NAT Technologies.pptx`. Topic/week placement provisional. **Not recorded as studied or lab-completed.**
+**Source:** `Firewall NAT Technologies.pptx`. Topic/week placement provisional. **Not recorded as studied or practical exercise-completed.**
 
 ## NAT essentials
 - NAT addresses IPv4 scarcity; source private ranges: `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`. Public directly Internet usable, private not.
@@ -37,4 +37,4 @@ PPT also requires corresponding `security-policy`, firewall interfaces/zones and
 - **ASPF** application-aware packet filtering / expected data mapping vs **NAT ALG** rewriting IP/port embedded in application payload.
 - **NAT Server** statically maps public IP/port to an internal server; PPT example `nat server policy_ftp protocol tcp global 1.1.1.10 ftp inside 10.2.0.8 ftp unr-route` then `detect ftp`. Route example: `ip route-static 0.0.0.0 0.0.0.0 1.1.1.254`.
 
-No lab worksheet or executed configuration is established.
+No practical exercise worksheet or executed configuration is established.

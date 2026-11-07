@@ -50,4 +50,4 @@ For **802.1X**, the **supplicant** is the endpoint, the **authenticator** is typ
 5. Correlate redacted device `debug aaa authentication` / `debug aaa authorization` or protocol-specific diagnostics with server logs, then disable verbose debug.
 6. Verify both authorized login and denial, fallback during controlled server unreachability, restricted commands and actual accounting records.
 
-**What I learned:** authentication success is not authorization success; fallback order and error semantics determine both security and recoverability. **Not verified:** server reachability, user session, explicit denial, fallback and records. See [lab register](../../LAB_EVIDENCE.md).
+**What I learned:** authentication success is not authorization success; fallback order and error semantics determine both security and recoverability. **Not verified:** server reachability, user session, explicit denial, fallback and records. See [practical exercise register](../../PRACTICAL_EVIDENCE.md).

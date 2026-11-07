@@ -1,6 +1,6 @@
 # Practical Security Learning — Evidence-First Portfolio
 
-This section connects four academic learning tracks to independently reproducible, authorized exercises. It is a **learning roadmap**, not a claim that every exercise has been completed. No current/in-progress university group project, private HomeLab deployment, raw coursework slides, student identifiers, or private infrastructure details are included.
+This section connects four academic learning tracks to independently reproducible, authorized exercises. It is a **learning roadmap**, not a claim that every exercise has been completed. No current/in-progress university group project, private HomeLab deployment, raw coursework technical materials, student identifiers, or private infrastructure details are included.
 
 ## Ethical Hacking — authorized assessment methodology
 - **Reconnaissance and scoping:** define written authorization, permitted target ranges, time window and exclusions before testing.
@@ -16,7 +16,7 @@ This section connects four academic learning tracks to independently reproducibl
 - **Network detection:** SPAN traffic visibility, IDS/IPS alerts, signature tuning and benign/malicious test distinctions.
 - **Layer 2 safeguards:** port security, DHCP snooping and Dynamic ARP Inspection.
 - **Suggested deliverable:** control matrix with threat, configuration objective, positive/negative test, observed output and residual risk.
-- **Evidence status:** study notes and unverified lab plans; do not mark tests passed without captured results.
+- **Evidence status:** study notes and unverified practical exercise plans; do not mark tests passed without captured results.
 
 ## Enterprise Network Security — Huawei
 - **VRP operations:** interface, routing, service and management-plane inspection.
@@ -24,7 +24,7 @@ This section connects four academic learning tracks to independently reproducibl
 - **Address translation:** source/destination NAT, NAPT, Easy IP and NAT Server; distinguish reachability from policy authorization.
 - **Resilience:** VRRP, VGMP, HRP and failover verification, with explicit device/software compatibility.
 - **Suggested deliverable:** sanitized policy matrix, packet-path explanation and command/output verification register.
-- **Evidence status:** reference knowledge; Huawei lab execution is not yet independently verified.
+- **Evidence status:** reference knowledge; Huawei practical exercise execution is not yet independently verified.
 
 ## Artificial Intelligence and Data Analysis
 - **Python data workflow:** load a non-sensitive dataset, validate schema, handle missing values and encode features.
@@ -42,4 +42,4 @@ This section connects four academic learning tracks to independently reproducibl
 5. Interpretation, alternative explanations and limitations.
 6. Troubleshooting, remediation and retest if applicable.
 
-**Publication boundary:** This is original learning-oriented synthesis, not redistributed lecture slides or current assessed-project work. Planned exercises remain labeled planned until independently verified.
+**Publication boundary:** This is original learning-oriented synthesis, not redistributed lecture technical materials or current assessed-project work. Planned exercises remain labeled planned until independently verified.

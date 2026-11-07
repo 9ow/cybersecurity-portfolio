@@ -9,4 +9,4 @@
 **Visualization:** Matplotlib trends, comparisons, relationships and distributions.  
 **Machine learning:** supervised/unsupervised learning, train/test split, KNN, logistic regression, SVM and classifier evaluation.
 
-**Evidence boundary:** lecture content and lab work must be differentiated. This section does not include screenshots.
+**Evidence boundary:** lecture content and practical exercise work must be differentiated. This section does not include screenshots.

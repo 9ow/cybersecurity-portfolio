@@ -1,12 +1,12 @@
 # Artificial Intelligence and Python Programming Foundations
 
-> **Source provenance:** *Overview of AI & Python Fundamentals* lecture slides and *Introduction to Python Programming* practical worksheet. This page explains lecture concepts and supplies illustrative code, **not** evidence of independently completed worksheet submissions.
+> **Source provenance:** *Overview of AI & Python Fundamentals* lecture technical materials and *Introduction to Python Programming* practical worksheet. This page explains lecture concepts and supplies illustrative code, **not** evidence of independently completed worksheet submissions.
 
 ## Artificial intelligence: approaches, foundations, and scope
 
 The lecture distinguishes four approaches: **thinking humanly** (model human cognition), **thinking rationally** (formal logical reasoning), **acting humanly** (observable human-like behavior), and **acting rationally** (choose actions that best achieve an objective). These are different definitions rather than interchangeable model-training algorithms. A rational agent may act effectively without thinking like a person.
 
-The slides connect AI to mathematics (linear algebra, probability/statistics, calculus and optimization), computing/programming, data quality, machine learning, neural networks/deep learning, search and reasoning, NLP, computer vision, robotics/control, and responsible AI. Applications include spam filtering, speech recognition, games, automated planning and robotic vehicles. **Machine learning** learns patterns from examples, while rule-based systems execute programmer-specified logic. **Deep learning** is a subset of ML using multilayer neural networks; the overview does not teach how to train one.
+The technical materials connect AI to mathematics (linear algebra, probability/statistics, calculus and optimization), computing/programming, data quality, machine learning, neural networks/deep learning, search and reasoning, NLP, computer vision, robotics/control, and responsible AI. Applications include spam filtering, speech recognition, games, automated planning and robotic vehicles. **Machine learning** learns patterns from examples, while rule-based systems execute programmer-specified logic. **Deep learning** is a subset of ML using multilayer neural networks; the overview does not teach how to train one.
 
 ## Input, output, values, and conversion
 
@@ -51,7 +51,7 @@ for n in range(5):  # 0, 1, 2, 3, 4
     print(n)
 ```
 
-`pass` deliberately does nothing and is appropriate as a temporary placeholder. Unlike `continue`, it does **not** skip printing or other code afterward. The slides contain a few conflicting comments (for example a comment describing an even-number skip when the code skips only `5`); trust the actual condition and trace it.
+`pass` deliberately does nothing and is appropriate as a temporary placeholder. Unlike `continue`, it does **not** skip printing or other code afterward. The technical materials contain a few conflicting comments (for example a comment describing an even-number skip when the code skips only `5`); trust the actual condition and trace it.
 
 ## Strings: indices, slicing, and transformations
 
@@ -89,7 +89,7 @@ print(m.factorial(5))  # 120
 | Dictionary `{key:value}` | Insertion-ordered mapping in modern Python | Mutable | Keys unique | `get`, `keys`, `values`, `items`, `pop`, `popitem`, `copy`, `clear`, `fromkeys` |
 | Set `{...}` | Unordered unique elements | Mutable | Not allowed | `add`, `discard`, `union`, `intersection`, `difference`, `update`, `clear` |
 
-`list.remove(x)` removes the first matching value (and raises an error when absent); `pop(i)` returns and removes the chosen element (last by default). `list.reverse()` modifies the list **in place**; the slide's illustrated output after reversing appears inconsistent with its stated operation. Dictionary `get(key, default)` differs from `fromkeys(keys, value)`; one accesses a key and the other creates a dictionary. Sets cannot be accessed with positional indexing, and `set.pop()` removes an arbitrary member rather than a guaranteed first or last one.
+`list.remove(x)` removes the first matching value (and raises an error when absent); `pop(i)` returns and removes the chosen element (last by default). `list.reverse()` modifies the list **in place**; the technical reference's illustrated output after reversing appears inconsistent with its stated operation. Dictionary `get(key, default)` differs from `fromkeys(keys, value)`; one accesses a key and the other creates a dictionary. Sets cannot be accessed with positional indexing, and `set.pop()` removes an arbitrary member rather than a guaranteed first or last one.
 
 ## Practical worksheet: assigned work, not execution evidence
 
@@ -104,8 +104,8 @@ def rem_dups(temp):
     return result
 ```
 
-**Evidence boundary:** no uploaded executed Python notebook proves these lab tasks were completed. Keep future personal code, inputs, console output and troubleshooting in text, without private identifiers or screenshots.
+**Evidence boundary:** no uploaded executed Python notebook proves these practical exercise tasks were completed. Keep future personal code, inputs, console output and troubleshooting in text, without private identifiers or screenshots.
 
 ## Sources
-- Uploaded *Overview of AI & Python Fundamentals* slide deck: AI approaches, foundations, types, control flow, strings, functions, modules, collections.
+- Uploaded *Overview of AI & Python Fundamentals* technical reference deck: AI approaches, foundations, types, control flow, strings, functions, modules, collections.
 - Uploaded *Introduction to Python Programming* worksheet: Colab instructions, `print` parameters, exercises and sample outputs.

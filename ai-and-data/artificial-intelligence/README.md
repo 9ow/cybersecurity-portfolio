@@ -1,6 +1,6 @@
 # Artificial Intelligence, Python, and Machine Learning
 
-Technical documentation organized by **engineering topic**, based primarily on the uploaded teaching slides and practical worksheets. Pages distinguish lecture concepts, worksheet tasks, and supplementary explanations. **No images or screenshots. No identifiable records or private CSVs. No claimed model deployment.**
+Technical documentation organized by **engineering topic**, based primarily on the uploaded teaching technical materials and practical worksheets. Pages distinguish lecture concepts, worksheet tasks, and supplementary explanations. **No images or screenshots. No identifiable records or private CSVs. No claimed model deployment.**
 
 ## Topic documentation
 
@@ -15,8 +15,8 @@ Technical documentation organized by **engineering topic**, based primarily on t
 
 ## Evidence standard
 
-- **Lecture example** = shown/taught in source; it is not a personal executed lab.
+- **Lecture example** = shown/taught in source; it is not a personal executed practical exercise.
 - **Worksheet exercise** = assignment prompt, with any supplied sample output identified as such.
-- **Supplementary reference** = useful explanation retained from existing pages or added for clarity, not falsely attributed to the uploaded slides.
+- **Supplementary reference** = useful explanation retained from existing pages or added for clarity, not falsely attributed to the uploaded technical materials.
 
-The available uploads include four lecture slide decks, four practical worksheets. Individual lab execution outputs and a dedicated SVM or classification-metrics lecture deck are **not included**. Therefore no personally trained or deployed ML system, measured classifier performance, or completed worksheet submission is claimed. Professional documentation here emphasizes correctness, reproducibility and privacy over unsupported achievements.
+The available uploads include four lecture technical reference decks, four practical worksheets. Individual practical exercise execution outputs and a dedicated SVM or classification-metrics lecture deck are **not included**. Therefore no personally trained or deployed ML system, measured classifier performance, or completed worksheet submission is claimed. Professional documentation here emphasizes correctness, reproducibility and privacy over unsupported achievements.

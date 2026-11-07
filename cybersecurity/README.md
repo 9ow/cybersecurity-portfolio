@@ -1,7 +1,7 @@
 # Cybersecurity Engineering
 
 ## [Defence in Depth](defence-in-depth/README.md)
-Threat analysis, router hardening, access management (AAA), firewall policies, zone-based inspection and IDS/IPS. Includes source-grounded technical explanations and lab-evidence boundaries.
+Threat analysis, router hardening, access management (AAA), firewall policies, zone-based inspection and IDS/IPS. Includes source-grounded technical explanations and practical exercise-evidence boundaries.
 
 ## [Ethical Hacking](ethical-hacking/README.md)
 Authorized assessment methodology, confidentiality/integrity/authenticity, reconnaissance, footprinting, active and passive data collection, service and vulnerability scanning.
