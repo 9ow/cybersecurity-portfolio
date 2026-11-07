@@ -28,7 +28,7 @@ Worked on the analysis and proposed design of a multi-role **Student Management 
 - Plan tasks, dependencies and milestones using a Gantt-style schedule and evaluate technical, economic and organizational feasibility.
 
 ## Model and evidence coverage
-The supplied report includes a **use-case model**, an **activity diagram for report generation** and a **sequence diagram for report generation**. Class-diagram work is reported as part of the second-year learning, but no class diagram is visible in this particular supplied PDF; it is not represented here as source-verified evidence. UI illustrations and charts are described in text without republishing identifying screenshots.
+The supplied report includes a **use-case model**, an **activity diagram for report generation** and a **sequence diagram for report generation**. **Class diagram: Yes — completed**, as confirmed by the project owner. The original class diagram is not included in the portfolio. UI illustrations and charts are described in text without republishing identifying screenshots.
 
 **Screenshot policy:** This project is **text-and-diagram-explanation only**. Screenshot evidence folders are reserved for Cisco Networking, Defence in Depth, Ethical Hacking and Huawei Network Security; not Artificial Intelligence or this project.
 
