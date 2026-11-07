@@ -20,4 +20,4 @@ A curated, evidence-first portfolio of cybersecurity, networking, security opera
 ## Evidence and integrity
 Documentation distinguishes concepts studied, exercises planned, work performed, and results verified. Academic IP addresses are simulated; SOC addresses are from synthetic datasets. The older Packet Tracer topology SVG is a redrawing, **not** the original screenshot. No ongoing assessed university project is included; ongoing SOC learning is identified separately. No private HomeServer or V3 source is published here.
 
-This repository was curated into a new history rather than importing the previous repository's historical commits. Publication remains private pending final verification and original topology image upload.
+This repository was curated into a new history rather than importing the previous repository's historical commits. The original topology screenshot is not included yet; the documented SVG is a simplified redraw. Review publication readiness and permissions before making this repository public.
