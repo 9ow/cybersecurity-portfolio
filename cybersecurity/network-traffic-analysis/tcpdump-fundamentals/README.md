@@ -2,7 +2,7 @@
 
 **Platform:** Hack The Box Academy  
 **Topic:** Network Traffic Analysis  
-**Status:** Completed practical exercise (terminal results reviewed)
+**Status:** Fundamentals capture exercise completed; packet-filtering concepts and assessment questions completed; optional advanced PCAP investigation not performed
 
 ## Objective
 
@@ -88,7 +88,32 @@ The output displayed hexadecimal and ASCII representations of packet bytes. `-X`
 | `-v` | Show more verbose packet details |
 | `-l` | Line-buffered output for streaming through pipes |
 
-**Filtering concepts reviewed:** `port 80` matches source or destination port 80; `not icmp` excludes ICMP packets.
+## Packet filtering — subsequent HTB section
+
+After the capture-and-read exercise, the HTB Academy packet-filtering section and its assessment questions were completed. The following filter syntax and interpretation were studied:
+
+| Filter | Meaning |
+|---|---|
+| `host 10.10.20.1` | Match traffic to or from the specified host |
+| `src host 10.10.20.1` | Match packets sent by that host |
+| `dst host 10.10.20.1` | Match packets destined for that host |
+| `tcp port 443` | Match TCP traffic using source or destination port 443 |
+| `port 53` | Match traffic using port 53 in either direction |
+| `portrange 0-1024` | Match ports in the specified range |
+| `icmp or port 443` | Match either condition |
+| `host 10.10.20.1 and port 443` | Require both conditions |
+| `not icmp` | Exclude ICMP packets |
+| `less 64` / `greater 500` | Filter by packet length |
+
+The section also covered the distinction between filtering packets while capturing and filtering a saved PCAP during review. The `-n` option suppresses hostname resolution; `-nn` additionally suppresses service-name resolution. These examples represent **concepts studied**, not independently verified commands executed in the advanced exercise.
+
+### Optional advanced PCAP exercise — scope limitation
+
+The **Interrogating Network Traffic With Capture and Display Filters** exercise called for examining `TCPDump-lab-2.zip`, identifying the first TCP handshake and determining the DNS server. The required capture was not available in the training VM during the attempted walkthrough. The practical investigation was **skipped**; its answers were completed separately, without independently reproducing the packet analysis. No server IPs, handshake ports, timestamps, or DNS findings are claimed here.
+
+### Next learning topic
+
+**Wireshark** is the next HTB Academy topic. It is not marked as completed.
 
 ## Security operations relevance
 
@@ -100,4 +125,4 @@ The exercise was performed on an HTB training VM. The five terminal screenshots 
 
 ## Scope
 
-This page documents only the commands and results observed in the completed fundamentals exercise. It does not claim an incident was discovered or a real enterprise network was assessed.
+This page distinguishes the verified capture-and-read workflow from packet-filtering concepts studied and the advanced investigation that was skipped. It does not claim an incident was discovered or a real enterprise network was assessed.
