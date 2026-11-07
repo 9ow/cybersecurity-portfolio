@@ -9,7 +9,6 @@ Technical notes grounded in Huawei VRP, enterprise protocol and firewall lecture
 - **[Firewall Security Policies](topics/firewall-security-policies/README.md)** — Security zones and trust priorities, rule order, default-deny, stateful sessions and ASPF.
 - **[Huawei NAT Technologies](topics/network-address-translation/README.md)** — Source/destination NAT, Easy IP, NAPT, No-PAT, NAT Server and ALG.
 - **[Firewall High Availability](topics/firewall-high-availability/README.md)** — VRRP, VGMP, HRP, heartbeat, synchronization, failover and preemption.
-- **[Unverified Source Material](topics/additional-material-pending/README.md)** — Explicit evidence gaps; no claim of practical completion.
 
 Detailed vendor references: [source-based command and protocol notes](README.md) and [practical exercise evidence policy](PRACTICAL_EVIDENCE.md).
 
