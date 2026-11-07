@@ -1,35 +1,7 @@
-# Reporting Reference
+# Technical reporting and evidence quality
 
-**Evidence status:** Week 6 was planned; source file and lab result not verified.
+Transform observations into reviewable findings by separating response, inference, suspected vulnerability and verified condition.
 
-## What I learned (and why)
+[Reporting structure, severity rationale, remediation and retest criteria, fictional findings, troubleshooting and data-redaction standards](technical-reporting-and-quality.md).
 
-### Reporting
-Record scope, methods, evidence, reproducibility, impact, limitations and remediation without unsupported conclusions.
-
-### Ethical practice
-Redact sensitive information and preserve authorization records outside public repository.
-
-## Lab / practical learning
-
-- No confirmed Week 6 lab results.
-
-## Lab evidence checklist
-
-| Field | Record |
-| --- | --- |
-| Actual lab date | Not recorded |
-| Target outcome | To be added with lab worksheet |
-| Environment / tools | To be confirmed from session |
-| Commands / actions executed | Capture during lab |
-| Actual result | Attach and interpret screenshot |
-| Problems / fixes | Record real troubleshooting only |
-| Completion | Do not mark completed without verification |
-
-## Screenshots
-
-See [screenshots/](screenshots/README.md). Add numbered, redacted images from this week's real work. For each image, explain the command or action, purpose, observed output, and lesson. Keep private usernames, IDs, credentials, passwords, keys and university data out of GitHub.
-
-## Review note
-
-Topics not verified against this week's actual PPT are marked as course-level references or pending; they are not claimed to be completed lecture/lab tasks.
+**Core distinction:** report uncertainty explicitly. A timeout, a guessed OS and a port number are not independent evidence of compromise.

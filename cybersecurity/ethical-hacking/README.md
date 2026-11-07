@@ -1,18 +1,39 @@
-# Ethical Hacking — Technical Knowledge Portfolio
+# Ethical Hacking | Technical Security Portfolio
 
-Source-grounded IT7301 Ethical Hacking technical notes. The original six topic folders, earlier notes and screenshot placeholders are preserved; the detailed companion files below expand five lecture decks by subject. Examples are **lecture demonstrations**, not claims of personal execution.
+A structured knowledge base on authorized offensive security assessment, developed around information security fundamentals, reconnaissance, network scanning, service enumeration, vulnerability management, adversary frameworks and technical reporting.
 
-## Subject index
+**Focus:** explain real protocol behavior, command semantics, what results do and do not prove, operational limitations, and practical defensive implications. Commands use synthetic targets. The repository does not imply ownership of any tested environment or independently verified exploitation.
 
-- [Foundations, authorization, scope and testing](topics/ethical-hacking-foundations/foundations-and-scope.md)
-- [Footprinting, public sources and OSINT](topics/reconnaissance-and-osint/footprinting-field-guide.md)
-- [Network scanning, Nmap and NSE](topics/network-scanning-and-enumeration/nmap-and-network-scanning.md)
-- [Enumeration: SNMP, LDAP, NetBIOS, SMTP and FTP](topics/network-scanning-and-enumeration/protocol-enumeration.md)
-- [Vulnerability analysis, CVSS, CVE and CWE](topics/vulnerability-assessment-reference/vulnerability-analysis.md)
-- [MITRE frameworks and AI security](topics/adversary-frameworks-reference/frameworks-and-ai.md)
-- [Reporting, verification and publication practices](topics/reporting-reference/reporting-and-evidence.md)
-- [Practical lab evidence register and missing proof](labs/README.md)
+## Technical index
 
-## Evidence and privacy
+| Area | In-depth documentation |
+|---|---|
+| Security principles, assessment scope and ethics | [Security principles and engagements](topics/ethical-hacking-foundations/security-principles-and-engagements.md) |
+| Reconnaissance, OSINT, DNS and fingerprinting | [OSINT techniques and tooling](topics/reconnaissance-and-osint/osint-techniques-and-tooling.md) |
+| Network discovery, TCP/UDP states, Nmap and output | [Nmap command reference](topics/network-scanning-and-enumeration/nmap-command-reference.md) |
+| NSE categories, service checks and result validation | [NSE and service assessment](topics/network-scanning-and-enumeration/nse-and-service-assessment.md) |
+| SNMP objects, OIDs, agents and management exposure | [SNMP enumeration](topics/network-scanning-and-enumeration/snmp-enumeration.md) |
+| LDAP base DNs, filters, schema and query outcomes | [LDAP enumeration](topics/network-scanning-and-enumeration/ldap-enumeration.md) |
+| SMTP, FTP, SMB and NetBIOS protocol behavior | [Service enumeration](topics/network-scanning-and-enumeration/smtp-ftp-and-netbios.md) |
+| Vulnerability scoring, CVE, CWE and validation | [Scoring and validation](topics/vulnerability-assessment-reference/scoring-and-validation.md) |
+| MITRE frameworks, attacker behavior and AI security | [Threat models and AI](topics/adversary-frameworks-reference/threat-models-and-ai.md) |
+| Methodology, reproducibility and evidence quality | [Technical reporting and quality](topics/reporting-reference/technical-reporting-and-quality.md) |
 
-Reviewed: Unit 1 Introduction to Ethical Hacking (36 slides), Unit 2 Footprinting (28), Unit 3 Scanning Networks (42), Unit 4 Vulnerability Analysis (28), Unit 5 Enumeration (46). Source slides contain classroom demos, commands and screenshots; they do not authenticate student-run scans. Standalone lab worksheets and original student outputs were not available for evidence verification. No unverified screenshot was imported. References use generic tokens such as `<LAB_HOST>` instead of any target, network, username or credential. Authorized-only usage; verify scope and individual command/script impact before testing. This portfolio is evidence of study/documentation, not a claim of completed penetration-test engagements.
+[Browse the technical techniques index](techniques/README.md).
+
+## Skills demonstrated through documentation
+
+- Explain reconnaissance workflows, public-source limitations, common DNS record types and domain intelligence.
+- Interpret packet-level port scan outcomes, scan uncertainty, TCP control flags and UDP filtering.
+- Compare Nmap discovery, transport, version identification, timing, scripting and output options.
+- Explain how SNMP and LDAP expose structured management or directory data, how queries are composed, and which controls reduce disclosure.
+- Analyze SMTP response codes, FTP authentication signals and network sharing exposure without overclaiming access.
+- Distinguish CVE identifiers, CWE weakness taxonomies, CVSS vectors, scanner flags and actual risk.
+- Translate technical observations into defensible, appropriately qualified findings and mitigation advice.
+- Evaluate AI-assisted security workflows with human review, scope control and data minimization.
+
+## Professional standards
+
+This repository separates source-derived technical explanations and illustrative command syntax from individually verified execution. No real system addresses, private hostnames, credentials, organization-specific infrastructure or personal identity details are included. No third-party demonstration screenshots are presented as personal work. Testing is permissible only with written authorization and defined scope.
+
+The material represents knowledge and disciplined technical reasoning; it is not represented as an independently conducted client assessment, credential or employment history.
