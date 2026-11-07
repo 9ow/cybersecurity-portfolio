@@ -11,6 +11,7 @@ A curated, evidence-first portfolio of cybersecurity, networking, security opera
 
 ## Technical learning
 - [Ethical Hacking](cybersecurity/ethical-hacking/README.md)
+- [Network Traffic Analysis — Tcpdump Fundamentals](cybersecurity/network-traffic-analysis/tcpdump-fundamentals/README.md)
 - [Defence in Depth](cybersecurity/defence-in-depth/README.md)
 - [Huawei Network Security](networking/huawei/README.md)
 - [Cisco Networking](networking/cisco/README.md)
