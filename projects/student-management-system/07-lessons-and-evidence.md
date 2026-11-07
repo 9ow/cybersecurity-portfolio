@@ -20,10 +20,10 @@ The project report documents a complete set of academic **systems analysis and d
 | Report-generation sequence diagram | Yes |
 | UI screen designs | Yes |
 | Requirements and planning | Yes |
-| Class diagram | Not visible in this particular PDF; project owner says class modeling was also completed |
+| Class diagram | Yes — completed as part of the second-year project (confirmed by project owner) |
 | Running live system or code deployment | Not established |
 
-The listed UML and scenarios are academic **design outputs**, not automatically evidence of a fully coded operational service. When a further source for class modeling is provided, the exact attributes and relationships can be added.
+The listed UML and scenarios are academic **design outputs**, not automatically evidence of a fully coded operational service. The class diagram was completed, as confirmed by the project owner; its exact attributes and relationships are not reproduced here.
 
 ## Confidentiality and screenshot policy
 No personal names, identifiers, contacts, interviewee details, signatures, credentials or unredacted source documents belong in the repository. For future practical screenshot collections use only **Cisco Networking, Defence in Depth, Ethical Hacking and Huawei Network Security**. No screenshot folders are intended for Artificial Intelligence or this systems-design project.
