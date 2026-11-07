@@ -17,8 +17,8 @@ The report also contains a **sequence diagram for report generation**, ordering 
 
 **Lesson:** A sequence diagram answers *who interacts with whom and in what order*, unlike an activity diagram, which focuses on *what business process happens next*. Its messages should be consistent with the matching use case.
 
-## Class Diagram — What Was Studied
-The project owner reports covering class and sequence design during second-year work. The **provided PDF does not show a class diagram**. Therefore there is no source-verified list of class attributes, operations or multiplicities to reproduce. Class modeling generally captures entities, attributes, methods and relationships, but a specific system class diagram will only be documented after its actual evidence is available.
+## Class Diagram — Completed
+**Status: Yes — completed as part of the second-year project**, as confirmed by the project owner. The original diagram is not included in this portfolio, so its exact attributes, methods, and relationships are not reproduced here.
 
 ## Consistency checks
 - Course enrolment behavior requires checks for prerequisites, seats and scheduling conflicts.
