@@ -12,6 +12,8 @@ Verify tcpdump availability, identify available capture interfaces, collect a bo
 
 ### 1. Confirm tcpdump is available
 
+![Tcpdump installation confirmation](images/01-installation.png)
+
 ```bash
 which tcpdump
 tcpdump --version
@@ -21,6 +23,8 @@ The terminal confirmed that tcpdump was installed. The displayed version was **4
 
 ### 2. Discover capture interfaces
 
+![Available capture interfaces](images/02-interfaces.png)
+
 ```bash
 sudo tcpdump -D
 ```
@@ -28,6 +32,8 @@ sudo tcpdump -D
 The VM reported multiple interfaces. **ens3** was selected for the packet-capture exercise; this is a reminder not to assume every Linux system uses an interface named `eth0`.
 
 ### 3. Capture a small traffic sample
+
+![Bounded packet capture](images/03-capture-saved.png)
 
 ```bash
 sudo tcpdump -i ens3 -nn -c 10
@@ -50,6 +56,8 @@ ls -lh ~/first_capture.pcap
 
 ### 5. Read saved packets
 
+![Reading the saved PCAP](images/04-pcap-read.png)
+
 ```bash
 sudo tcpdump -nnr ~/first_capture.pcap
 ```
@@ -57,6 +65,8 @@ sudo tcpdump -nnr ~/first_capture.pcap
 The stored capture was read successfully. The output included TCP and UDP packets and traffic identified as HTTP. Source/destination addressing, port numbers, TCP flags, and packet lengths were visible.
 
 ### 6. Inspect packet bytes
+
+![Hexadecimal and ASCII packet inspection](images/05-hex-ascii.png)
 
 ```bash
 sudo tcpdump -nnXr ~/first_capture.pcap -c 3
@@ -86,7 +96,7 @@ This workflow supports initial network baselining, traffic triage, packet-level 
 
 ## Evidence handling
 
-The exercise was performed on an HTB training VM. Terminal screenshots were reviewed during the exercise, but **screenshots and the PCAP are not included in this repository page**. Before adding images publicly, terminal screenshots should be checked for session identifiers, public IP addresses, and other unnecessary metadata. No private HomeLab captures or configuration are included.
+The exercise was performed on an HTB training VM. The five terminal screenshots are included as evidence from the HTB training VM. They were reviewed for unnecessary sensitive information before publication. The PCAP itself is not included. No private HomeLab captures or configuration are included.
 
 ## Scope
 
