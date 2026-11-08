@@ -6,6 +6,9 @@ Threat analysis, router hardening, access management (AAA), firewall policies, z
 ## [Ethical Hacking](ethical-hacking/README.md)
 Authorized assessment methodology, confidentiality/integrity/authenticity, reconnaissance, footprinting, active and passive data collection, service and vulnerability scanning.
 
+## [Cloud Computing Fundamentals](cloud-computing/README.md)
+Cloud architecture, EC2 fundamentals, instance management, and simulated billing optimization.
+
 ## [Virtualization Fundamentals](virtualization/README.md)
 Hypervisors, virtual machines, containers, Docker, and virtualization management.
 
