@@ -9,6 +9,9 @@ Authorized assessment methodology, confidentiality/integrity/authenticity, recon
 ## [Cloud Computing Fundamentals](cloud-computing/README.md)
 Cloud architecture, EC2 fundamentals, instance management, and simulated billing optimization.
 
+## [Operating Systems: Introduction](operating-systems/introduction/README.md)
+OS responsibilities, built-in security, GUI/CLI, file systems, and operating system categories.
+
 ## [Virtualization Fundamentals](virtualization/README.md)
 Hypervisors, virtual machines, containers, Docker, and virtualization management.
 
