@@ -11,6 +11,7 @@ A curated, evidence-first portfolio of cybersecurity, networking, security opera
 
 ## Technical learning
 - [Client–Server Fundamentals — TryHackMe](cybersecurity/networking-fundamentals/client-server/README.md)
+- [Cloud Computing Fundamentals — TryHackMe](cybersecurity/cloud-computing/README.md)
 - [Virtualization Fundamentals — TryHackMe](cybersecurity/virtualization/README.md)
 - [Ethical Hacking](cybersecurity/ethical-hacking/README.md)
 - [Network Traffic Analysis — Tcpdump Fundamentals](cybersecurity/network-traffic-analysis/tcpdump-fundamentals/README.md)
