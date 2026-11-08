@@ -10,6 +10,7 @@ A curated, evidence-first portfolio of cybersecurity, networking, security opera
 - [SOC Investigations](security-operations/soc-investigations/README.md) — ongoing analyst practice using synthetic training datasets. Individual investigations are only considered completed when evidence and findings are documented.
 
 ## Technical learning
+- [Client–Server Fundamentals — TryHackMe](cybersecurity/networking-fundamentals/client-server/README.md)
 - [Ethical Hacking](cybersecurity/ethical-hacking/README.md)
 - [Network Traffic Analysis — Tcpdump Fundamentals](cybersecurity/network-traffic-analysis/tcpdump-fundamentals/README.md)
 - [Wireshark — Network Traffic Analysis](cybersecurity/network-traffic-analysis/wireshark/README.md)
