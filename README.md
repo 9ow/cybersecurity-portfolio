@@ -12,13 +12,9 @@ A curated, evidence-first portfolio of cybersecurity, networking, security opera
 ## Technical learning
 - [Ethical Hacking](cybersecurity/ethical-hacking/README.md)
 - [Network Traffic Analysis — Tcpdump Fundamentals](cybersecurity/network-traffic-analysis/tcpdump-fundamentals/README.md)
+- [Wireshark — Network Traffic Analysis](cybersecurity/network-traffic-analysis/wireshark/README.md)
 - [Defence in Depth](cybersecurity/defence-in-depth/README.md)
 - [Huawei Network Security](networking/huawei/README.md)
 - [Cisco Networking](networking/cisco/README.md)
 - [Artificial Intelligence and Data](ai-and-data/artificial-intelligence/README.md)
 - [Practical learning roadmap](docs/PRACTICAL-LEARNING-ROADMAP.md)
-
-## Evidence and integrity
-Documentation distinguishes concepts studied, exercises planned, work performed, and results verified. Academic IP addresses are simulated; SOC addresses are from synthetic datasets. The older Packet Tracer topology SVG is a redrawing, **not** the original screenshot. No ongoing assessed university project is included; ongoing SOC learning is identified separately. No private HomeServer or V3 source is published here.
-
-This repository was curated into a new history rather than importing the previous repository's historical commits. The original topology screenshot is not included yet; the documented SVG is a simplified redraw. Review publication readiness and permissions before making this repository public.
