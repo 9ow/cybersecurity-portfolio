@@ -42,6 +42,8 @@ The room introduces AWS, Microsoft Azure, Google Cloud, Alibaba Cloud, IBM Cloud
 
 The cloud console displayed the region **`us-east-1 (N. Virginia)`**. Choosing a region defines where cloud resources are deployed.
 
+![Cloud console region selection](images/01-region-selection.png)
+
 ### Launching a virtual machine
 
 The **Create Virtual Machine** screen displayed these selections:
@@ -54,6 +56,8 @@ The **Create Virtual Machine** screen displayed these selections:
 | Displayed monthly cost | 10 credits |
 
 An EC2 instance is a virtual computer in the cloud. Its instance type determines the resource capacity and affects the cost.
+
+![Create Virtual Machine screen](images/02-create-virtual-machine.png)
 
 ### Reviewing instances
 
@@ -68,9 +72,15 @@ The console showed the following running virtual machines:
 | `study-machine-2` | `m5.large` | 70 |
 | **Total** | | **170** |
 
+![Running instance inventory](images/03-instance-inventory.png)
+
 ### Cost optimization: Stop unused instances
 
 The two larger study instances were then stopped. In the exercise's simulated billing model, only running VMs contributed to the monthly estimate.
+
+#### Billing before stopping instances
+
+![Simulated billing before stopping unused instances](images/04-billing-before.png)
 
 | Instance group | Before | After |
 | --- | ---: | ---: |
@@ -79,6 +89,10 @@ The two larger study instances were then stopped. In the exercise's simulated bi
 | **Estimated total (credits/month)** | **170** | **30** |
 
 **Result:** A reduction of **140 credits/month**, approximately **82.4%**, in the simulated environment.
+
+#### Billing after stopping instances
+
+![Simulated billing after stopping two instances](images/05-billing-after.png)
 
 > The above credits and stopped-instance billing behavior refer to the training simulator, not a quotation of real AWS billing.
 
