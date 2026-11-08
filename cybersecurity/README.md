@@ -6,6 +6,9 @@ Threat analysis, router hardening, access management (AAA), firewall policies, z
 ## [Ethical Hacking](ethical-hacking/README.md)
 Authorized assessment methodology, confidentiality/integrity/authenticity, reconnaissance, footprinting, active and passive data collection, service and vulnerability scanning.
 
+## [Client–Server Fundamentals](networking-fundamentals/client-server/README.md)
+Client–server architecture, DNS, protocols, ports, HTTP methods, and browser GET requests.
+
 ## [Wireshark — Network Traffic Analysis](network-traffic-analysis/wireshark/README.md)
 PCAP inspection, HTTP object extraction, display filters, TCP conversation analysis and guided capture review.
 
