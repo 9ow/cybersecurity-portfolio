@@ -11,6 +11,7 @@ A curated, evidence-first portfolio of cybersecurity, networking, security opera
 
 ## Technical learning
 - [Python: Simple Demo — TryHackMe](cybersecurity/python-simple-demo/README.md)
+- [JavaScript: Simple Demo — TryHackMe](cybersecurity/javascript-simple-demo/README.md)
 - [Operating System Security — TryHackMe](cybersecurity/operating-system-security/README.md)
 - [Linux CLI Basics — TryHackMe](cybersecurity/linux-cli-basics/README.md)
 - [Windows CLI Basics — TryHackMe](cybersecurity/windows-cli-basics/README.md)
