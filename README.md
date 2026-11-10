@@ -10,6 +10,7 @@ A curated, evidence-first portfolio of cybersecurity, networking, security opera
 - [SOC Investigations](security-operations/soc-investigations/README.md) — ongoing analyst practice using synthetic training datasets. Individual investigations are only considered completed when evidence and findings are documented.
 
 ## Technical learning
+- [Intro to LAN — TryHackMe](cybersecurity/intro-to-lan/README.md)
 - [Python: Simple Demo — TryHackMe](cybersecurity/python-simple-demo/README.md)
 - [JavaScript: Simple Demo — TryHackMe](cybersecurity/javascript-simple-demo/README.md)
 - [Operating System Security — TryHackMe](cybersecurity/operating-system-security/README.md)
