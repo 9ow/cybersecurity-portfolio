@@ -9,6 +9,9 @@ Authorized assessment methodology, confidentiality/integrity/authenticity, recon
 ## [Python: Simple Demo](python-simple-demo/README.md)
 Python variables, random number generation, input conversion, conditional logic, and while-loop control flow, documented with runnable code.
 
+## [JavaScript: Simple Demo](javascript-simple-demo/README.md)
+JavaScript variables and constants, Node.js console I/O, input parsing, conditional logic, and while-loop control flow, documented with code examples.
+
 ## [Operating System Security](operating-system-security/README.md)
 CIA triad, authentication weaknesses, least privilege, file permissions, malicious software, SSH access, and Linux command-line fundamentals.
 
