@@ -6,6 +6,9 @@ Threat analysis, router hardening, access management (AAA), firewall policies, z
 ## [Ethical Hacking](ethical-hacking/README.md)
 Authorized assessment methodology, confidentiality/integrity/authenticity, reconnaissance, footprinting, active and passive data collection, service and vulnerability scanning.
 
+## [Intro to LAN](intro-to-lan/README.md)
+LAN topologies, switch and router roles, IPv4 subnetting, ARP discovery, DHCP DORA, and network segmentation security considerations.
+
 ## [Python: Simple Demo](python-simple-demo/README.md)
 Python variables, random number generation, input conversion, conditional logic, and while-loop control flow, documented with runnable code.
 
