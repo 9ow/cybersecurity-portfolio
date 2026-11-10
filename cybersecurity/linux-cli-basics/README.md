@@ -27,6 +27,18 @@ Linux names beginning with a dot (`.`) are hidden by default from ordinary direc
 
 Used `find` to locate `mission_brief.txt` and navigated to its containing directory before reading it with `cat`. The file contained the next assignment: identify the logged-in user, kernel version, total disk space, and Linux distribution.
 
+#### Finding `mission_brief.txt` with `find`
+
+The screenshot shows the filename search and the resulting path.
+
+![Finding mission_brief.txt using find](images/01-find-mission-brief.png)
+
+#### Reading `mission_brief.txt` with `cat`
+
+The screenshot shows the file being read and the assignment details it contains.
+
+![Reading mission_brief.txt using cat](images/02-read-mission-brief.png)
+
 This exercise demonstrates how to find a file when only its name is known, then inspect its contents without relying on a graphical file manager.
 
 ## Inspecting the Linux environment
