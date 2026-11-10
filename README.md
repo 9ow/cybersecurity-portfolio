@@ -11,6 +11,7 @@ A curated, evidence-first portfolio of cybersecurity, networking, security opera
 
 ## Technical learning
 - [Linux CLI Basics — TryHackMe](cybersecurity/linux-cli-basics/README.md)
+- [Windows CLI Basics — TryHackMe](cybersecurity/windows-cli-basics/README.md)
 - [Client–Server Fundamentals — TryHackMe](cybersecurity/networking-fundamentals/client-server/README.md)
 - [Cloud Computing Fundamentals — TryHackMe](cybersecurity/cloud-computing/README.md)
 - [Virtualization Fundamentals — TryHackMe](cybersecurity/virtualization/README.md)

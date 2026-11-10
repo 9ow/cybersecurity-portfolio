@@ -12,6 +12,9 @@ Cloud architecture, EC2 fundamentals, instance management, and simulated billing
 ## [Linux CLI Basics](linux-cli-basics/README.md)
 Linux terminal navigation, file discovery, system identification, and storage inspection.
 
+## [Windows CLI Basics](windows-cli-basics/README.md)
+Windows CMD navigation, recursive file search, text-file inspection, and basic host and network information.
+
 ## [Windows Basics](operating-systems/windows-basics/README.md)
 Windows administration, user accounts, Task Manager, software management, and built-in security controls.
 
