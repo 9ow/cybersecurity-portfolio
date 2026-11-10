@@ -9,6 +9,9 @@ Authorized assessment methodology, confidentiality/integrity/authenticity, recon
 ## [Cloud Computing Fundamentals](cloud-computing/README.md)
 Cloud architecture, EC2 fundamentals, instance management, and simulated billing optimization.
 
+## [Linux CLI Basics](linux-cli-basics/README.md)
+Linux terminal navigation, file discovery, system identification, and storage inspection.
+
 ## [Windows Basics](operating-systems/windows-basics/README.md)
 Windows administration, user accounts, Task Manager, software management, and built-in security controls.
 
