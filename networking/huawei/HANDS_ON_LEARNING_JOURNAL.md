@@ -64,14 +64,3 @@ A site-to-site VPN connects two private networks through an untrusted WAN. Typic
 - Incorrect OSPF router IDs, missing network statements and wrong static next hops can disrupt reachability.
 - An IPsec policy requires a creation mode such as ISAKMP when the policy/sequence combination is new.
 
-## Practical checklist
-
-- [ ] Inspect interfaces and IP addresses
-- [ ] Confirm default gateways and routing
-- [ ] Verify security zones and policy matches
-- [ ] Check authentication and NAT rules where relevant
-- [ ] Inspect HRP/VRRP state for redundant firewalls
-- [ ] Verify IKE/IPsec associations for encrypted site-to-site connectivity
-- [ ] Save configurations after testing
-
-*Personal technical study notes for Huawei enterprise network security.*
