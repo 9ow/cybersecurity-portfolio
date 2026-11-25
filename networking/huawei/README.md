@@ -12,6 +12,10 @@ Technical notes grounded in Huawei VRP, enterprise protocol and firewall lecture
 
 Detailed vendor references: [source-based command and protocol notes](README.md) and [practical exercise evidence policy](PRACTICAL_EVIDENCE.md).
 
+## Hands-on practice
+
+- **[Huawei Labs Learning Journal](HANDS_ON_LEARNING_JOURNAL.md)** — documented VRP, routing, firewall policy, HA, authentication and IPsec learning, including actual troubleshooting observations and verification limits.
+
 ## Verification & publication
 
 The technical documentation identifies which material came from lectures or worksheets and which outcomes have actually been tested. Authentic practical exercise screenshots may be added only to permitted networking and security topics after removing identity details and private infrastructure. AI evidence is text/code-only. These notes are learning evidence, not a claim of production employment or vendor certification.
