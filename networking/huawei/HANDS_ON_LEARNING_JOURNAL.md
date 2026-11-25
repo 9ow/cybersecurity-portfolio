@@ -1,89 +1,77 @@
-# Huawei Enterprise Network Security — Hands-on Learning Journal
+# Huawei Enterprise Network Security — Learning Journal
 
-**Platform:** Huawei eNSP / VRP / USG firewalls  
-**Course context:** Enterprise Network Security and Firewall Technologies  
-**Last updated:** 2026-11-25  
-**Evidence level:** Learning journal compiled from guided practice and shared CLI output. Not a claim of production deployment or certification.
+**Platform:** Huawei eNSP, VRP, USG firewalls  
+**Focus:** Enterprise networking, firewall security, high availability, authentication and secure site-to-site connectivity
 
-## Skills studied and practiced
+## Topics covered
 
-| Area | What I learned | Evidence/status |
-|---|---|---|
-| VRP foundations | System/user views, interface configuration, saving and inspecting configuration, `display` diagnostics | Practiced during eNSP exercises; individual full configs not archived |
-| IP addressing and connectivity | Configure firewall/router interfaces, /24 and /30 networks, default gateways, ping and link checks | In a VPN practice topology, PC1 successfully reached its firewall gateway |
-| Routing | Static routes, OSPF process 1/Area 0, router IDs, WAN network advertisements, neighbor checks | Practiced; encountered duplicate router IDs and missing/wrong OSPF network statements |
-| Firewall zoning | Trust, Untrust and Local zones, zone-based security policies, default deny | Practiced and inspected live policy output |
-| Security policies | Permit LAN flows and IKE/ESP peer traffic; custom service object for UDP 500/4500; ICMP diagnostics | Firewall-A output showed VPN-LAN-OUT, VPN-PEER-IN, VPN-PEER-OUT and default deny; VPN-LAN-IN was missing in that snapshot |
-| NAT | Source/destination NAT and related Huawei NAT concepts | Studied in course materials; no verified end-to-end execution evidence in this journal |
-| High availability (Lab 5) | HRP heartbeat, VRRP virtual gateway, active/standby behavior and failover | Studied; currently beginning a new independent HA mock; no fresh completion evidence yet |
-| User authentication (Lab 7) | Firewall-mediated employee/guest authentication and access-control practice | Covered in guided lab study; exact independent verification not preserved here |
-| Site-to-site IPsec (Lab 8) | Interesting-traffic ACL 3000, IPsec ESP proposal, IKE proposal and peer, IPsec policy on WAN, IKE/IPsec SA inspection | One earlier guided attempt showed established SAs and encrypted/decrypted counters; later independent attempt reached IKE negotiation but not an established IPsec SA |
+| Topic | Skills and concepts |
+|---|---|
+| VRP device management | User and system views, interface configuration, device inspection, saving configurations |
+| Network connectivity | IPv4 addressing, subnet masks, default gateways, ping, interface status |
+| Routing | Static routes, OSPF Area 0, router IDs, WAN advertisements, neighbor verification |
+| Firewall zones | Trust, Untrust, Local and DMZ, zone assignments, traffic direction |
+| Security policies | Source/destination zones and addresses, service objects, rule matching, default deny, session inspection |
+| Network address translation | Source NAT, NAT Server, address pools and policy-based translation |
+| High availability | HRP, VRRP, active/standby roles, heartbeat interfaces, synchronization and failover |
+| Authentication | User access control, guest access, authentication exemption and portal-related configuration |
+| IPsec VPN | Advanced ACL traffic selection, IKE peers and proposals, ESP tunnel mode, IPsec policies and security associations |
 
-## Lab 8 — Site-to-site IPsec VPN
+## VRP and network configuration
 
-### Example lab topology
+Huawei VRP uses different CLI views for device-wide and interface-specific configuration. Key operational habits include checking interface status, verifying addressing, testing the nearest gateway before distant destinations, and saving the running configuration.
 
-```text
-PC1 -- FW-A -- AR1 -- FW-B -- PC2
-10.1.1.0/24   40.1.1.0/30  40.1.1.4/30   10.1.2.0/24
-```
+Routing practice covers static next hops and OSPF on WAN links. Router IDs must be unique, and each router must advertise the intended connected network.
 
-- FW-A Trust: `10.1.1.1/24`; WAN: `40.1.1.1/30`
-- AR1 WAN interfaces: `40.1.1.2/30` and `40.1.1.5/30`
-- FW-B WAN: `40.1.1.6/30`; Trust: `10.1.2.1/24`
-- PC1: `10.1.1.10/24`; PC2: `10.1.2.10/24`
+## Firewall security and NAT
 
-### Configuration concepts
+Security zones determine the direction of traffic inspected by Huawei USG policies. A rule can match source zone, destination zone, source and destination addresses, and services. The default-deny rule blocks traffic that does not match a permit policy.
 
-1. Establish interface addressing and reachability.
-2. Configure OSPF on transit links and static routes for the remote LANs.
-3. Apply firewall security policies for LAN-to-LAN traffic and IKE/ESP negotiation.
-4. Match traffic selectors using mirrored advanced ACL 3000 rules.
-5. Create an ESP tunnel proposal using AES-256 and SHA2-256.
-6. Configure IKE proposal parameters, Diffie–Hellman group 14 and a pre-shared-key peer (key **not** recorded in this public repository).
-7. Bind the IKE peer, proposal and ACL to an IPsec policy and apply it to the WAN interface.
-8. Generate test traffic and inspect `display ike sa`, `display ipsec sa` and `display ipsec statistics`.
+NAT concepts include source translation for outbound traffic and NAT Server for publishing selected services. Access permission and address translation are separate configuration decisions.
 
-### Observed outcomes and troubleshooting
+## High availability: HRP and VRRP
 
-- **Earlier guided run:** IKE/IPsec security associations were established, and encryption/decryption counters increased (previously observed approximately 9 encrypted and 8 decrypted packets).
-- **Independent repeat:** `display ike sa` showed one peer `40.1.1.6:500` in `NEG|A` (negotiating) state, not `RD` (ready). `display ipsec sa` returned no established SA.
-- **Firewall-A policy snapshot:** `VPN-LAN-OUT` had 5 hits, `VPN-PEER-OUT` had 1 hit, `VPN-PEER-IN` had 0 hits, and default deny had 15 hits. This suggests traffic was being denied and/or peer negotiations were not matching expected rules; it does **not** by itself prove the root cause.
-- **Peer rules checked:** Both firewalls had peer-in rules permitting IKE service and ESP from the opposite WAN IP to the local WAN IP.
-- **Connectivity isolation:** A ping toward FW-B worked from AR1, while a firewall-originated WAN ping failed at one stage. This highlighted the difference between network reachability and firewall Local-zone policy permission.
-- **Routing mistakes encountered:** Duplicate OSPF router IDs, an omitted transit network statement, and a static route with the wrong next hop. These were identified for correction; full final route verification was not preserved.
-- **VRP syntax lesson:** A new IPsec policy needs its mode specified at creation (e.g., ISAKMP); attempting to create only a name and sequence generated a mode-required error.
+A redundant firewall pair uses a dedicated heartbeat connection and coordinated active/standby behavior. VRRP provides virtual gateway addresses; HRP supports state and configuration synchronization. During a controlled failover, the standby firewall should assume forwarding responsibility, subject to correct configuration and network health.
 
-## Lab 5 — Firewall high availability
+Useful checks include `display hrp state`, `display vrrp brief`, security-policy inspection and connectivity testing.
 
-Concepts being consolidated:
+## User authentication and guest access
 
-- Separate Trust, Untrust and HRP heartbeat networks.
-- Configure HA peer communication and VRRP virtual gateways.
-- Understand Active/Standby roles, synchronization and failover.
-- Verify interfaces and HA state before attempting failover tests.
+Firewall access control can combine security policies with authentication behavior. Guest traffic may be exempted from authentication for specifically permitted services, while other users can be subject to configured authentication requirements.
 
-**Current independent mock:** Step 1/46 is in progress: address two HA firewalls' Trust, Untrust and heartbeat interfaces. No successful completion has yet been reported.
+Authentication rules and security policies serve different purposes and both should be checked when access does not work as expected.
 
-## Lab 7 — Authentication and access control
+## Site-to-site IPsec VPN
 
-The current combined mock includes a dedicated firewall authentication/access-control section for employee and guest clients. The detailed worksheet and a verified output transcript are not available in this entry, so implementation-specific claims are intentionally limited.
+A site-to-site VPN connects two private networks through an untrusted WAN. Typical configuration sequence:
 
-## Troubleshooting workflow learned
+1. Configure firewall and router IP addresses and verify local connectivity.
+2. Establish WAN routing using OSPF and/or static routes as required.
+3. Permit IKE, ESP and the intended intersite traffic with firewall security policies.
+4. Use mirrored advanced ACLs to identify protected traffic.
+5. Define an ESP tunnel proposal with AES-256 encryption and SHA2-256 authentication.
+6. Configure IKE proposal settings, Diffie–Hellman group 14 and matching peer parameters.
+7. Create an IPsec policy, reference the ACL, IKE peer and ESP proposal, then apply it to the WAN interface.
+8. Generate intersite traffic and inspect `display ike sa`, `display ipsec sa` and `display ipsec statistics`.
 
-1. Check physical link and `display ip interface brief`.
-2. Test the directly connected default gateway before remote endpoints.
-3. Inspect routing and OSPF neighbor state.
-4. Inspect security policy rules and hit counters.
-5. Verify that Local-to-Untrust and Untrust-to-Local permissions match the actual source/destination.
-6. Inspect IKE phase state before expecting an IPsec SA.
-7. Confirm bidirectional encrypted/decrypted counters before declaring the VPN operational.
-8. Save configurations and preserve sanitized evidence.
+### Troubleshooting lessons
 
-## Next steps
+- An IKE association showing `NEG` is still negotiating; it is not equivalent to a ready tunnel.
+- No output from `display ipsec sa` means an active IPsec SA has not been confirmed.
+- A successful ping from a transit router does not automatically mean a firewall-originated ping will be permitted.
+- Firewall Local-to-Untrust and Untrust-to-Local rules can affect IKE and diagnostic traffic.
+- Policy hit counters help narrow down traffic matching, but do not establish a root cause on their own.
+- Incorrect OSPF router IDs, missing network statements and wrong static next hops can disrupt reachability.
+- An IPsec policy requires a creation mode such as ISAKMP when the policy/sequence combination is new.
 
-- Finish the combined Lab 5 + Lab 7 + Lab 8 independent practical mock.
-- Capture sanitized CLI outputs for HA state, authentication behavior, IKE/IPsec SAs and connectivity.
-- Update this journal with verified outcomes and screenshots only after tests pass.
+## Practical checklist
 
-> This document separates **course study**, **guided practice**, and **verified outputs**. No live passwords, pre-shared keys or private institutional information are included.
+- [ ] Inspect interfaces and IP addresses
+- [ ] Confirm default gateways and routing
+- [ ] Verify security zones and policy matches
+- [ ] Check authentication and NAT rules where relevant
+- [ ] Inspect HRP/VRRP state for redundant firewalls
+- [ ] Verify IKE/IPsec associations for encrypted site-to-site connectivity
+- [ ] Save configurations after testing
+
+*Personal technical study notes for Huawei enterprise network security.*
