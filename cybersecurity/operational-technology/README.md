@@ -85,4 +85,3 @@ Defensive priorities explored conceptually:
 
 Training source: [TryHackMe](https://tryhackme.com/) introductory OT/ICS content. This documentation summarizes concepts and a simulated HMI interaction in original words; it does not claim production-system penetration testing, a deployed OT design, or an external certification.
 
-_No private home-network addresses, topology, device details or captures are included._
