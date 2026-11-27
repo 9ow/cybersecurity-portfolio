@@ -1,5 +1,8 @@
 # Cybersecurity Engineering
 
+## [Operational Technology & Industrial Control Systems](operational-technology/README.md)
+OT/ICS/SCADA concepts, PLC inputs and outputs, simulated water-tank HMI control, and safety-focused IT/OT security differences.
+
 ## [Defence in Depth](defence-in-depth/README.md)
 Threat analysis, router hardening, access management (AAA), firewall policies, zone-based inspection and IDS/IPS. Includes source-grounded technical explanations and practical exercise-evidence boundaries.
 
